@@ -72,38 +72,41 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="home-playlist d-flex justify-content-between">
+      <div className="home-playlist">
         <div className="home-recently-played">
           <h4>Recently Played</h4>
           {songs.map((song) => (
             <div className="home-recently-music d-flex justify-content-between ">
               <div>
-              <PlayCircleOutlineIcon
-            fontSize="small"
-            className="text-light home-recently-icon"
-          />
+                <PlayCircleOutlineIcon
+                  fontSize="small"
+                  className="text-light home-recently-icon"
+                />
               </div>
               <p>{song.title}</p>
               <span>{song.artist}</span>
               <span>13:20</span>
-              <FavoriteBorderIcon/>
+              <FavoriteBorderIcon />
               <span>...</span>
             </div>
           ))}
         </div>
         <div className="home-recommended ">
           <h4>Recommended for You</h4>
-            <div className="d-flex justify-content-between">
-          {songs.map((song)=>(
-            <div className="home-recommended-music">
-            <div> 
-              <PlayCircleOutlineIcon
-            fontSize="large"
-            className="text-light home-recommended-icon"
-          /></div>
-            <p>{song.title} <span>{song.artist}</span></p>
-          </div> 
-          ))}
+          <div className="d-flex justify-content-between">
+            {songs.map((song) => (
+              <div className="home-recommended-music">
+                <div>
+                  <PlayCircleOutlineIcon
+                    fontSize="large"
+                    className="text-light home-recommended-icon"
+                  />
+                </div>
+                <p>
+                  {song.title} <span>{song.artist}</span>
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

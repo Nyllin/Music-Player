@@ -3,12 +3,12 @@
   background-color: #fff;
   top: 0;
   left: 25%;
-  height: 98.5%;
+  height: 96.5%;
   width: 75%;
   border-bottom-right-radius: 50px;
   box-shadow: 7px 16px 5px 0px rgba(0, 0, 0, 0.22);
   z-index: 1;
-  padding: 50px;
+  padding:50px;
 }
 .home-search {
   width: 100%;
@@ -83,7 +83,7 @@
 }
 
 .home-genre .home-genre-icons {
-  margin-top: 70px !important;
+  margin-top: 50px !important;
 }
 
 .home-genre .home-genre-one:hover {
@@ -99,6 +99,8 @@
 
 .home-playlist {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
   
   
 }
@@ -199,6 +201,8 @@
     width: 100%;
     margin-bottom: 50px;
   }
+
+  
 
   .home-search input {
     width: 70%;
